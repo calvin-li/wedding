@@ -1,0 +1,10 @@
+#gallery_wrapper {
+    width: 960px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 215px;
+    scrollbar-width: thin;
+    margin-bottom: 20px;
+    align-items: baseline;
+    position: relative;
+}

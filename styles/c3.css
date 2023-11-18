@@ -1,0 +1,43 @@
+#c3bg {
+    --c3--bg-height: 0;
+    background-image: url(../media/rock2.jpg);
+}
+
+#c3>.content_title {
+    font-size: 3em;
+    margin-bottom: 0px;
+    height: fit-content;
+    padding: 0px 15px 0px 15px;
+}
+
+#c3>.content_body {
+    bottom: calc(var(--c3--bg-height) * 0.05 * 1px);
+    background-color: transparent;
+}
+
+.schedule {
+    width: 30vw;
+    background-color: var(--bg-shading);
+    padding: 30px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-style: italic;
+    padding: 30px;
+}
+
+.schedule-time {
+    min-width: 5%;
+    text-align: right;
+    padding-left: 5%;
+}
+
+.schedule-line {
+    width: 65%;
+    height: fit-content;
+    margin: 0px 10px 10px 10px;
+    color: var(--color3);
+}
