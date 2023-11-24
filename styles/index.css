@@ -22,7 +22,7 @@
     --menu-items-per-row: 6;
 }
 
-@media (max-width: 960px){
+@media (max-width: 960px) {
     :root {
         --menu-items-per-row: 2;
     }
@@ -31,11 +31,17 @@
 :root {
     --animation-ms: 500ms;
 
-    --color1: rgb(255, 255, 255);
-    --color2: rgba(0, 0, 0);
-    --color3: rgb(255, 255, 255, 0.75);
-    --colortxt: rgb(0, 0, 0);
-    --bg-shading: rgba(255, 255, 255, 0.5);
+    --hue-light: 255, 255, 255;
+    --hue-dark: 0, 0, 0;
+    --translucent: 0.67;
+
+    --color-invite-orange: rgb(161, 98, 77);
+
+    --color-light: rgb(var(--hue-light));
+    --color-dark: rgb(var(--hue-dark));
+    --color-light-tl: rgba(var(--hue-light), var(--translucent));
+    --color-dark-tl: rgba(var(--hue-dark), var(--translucent));
+    --color-txt: rgb(var(--hue-dark));
 
     --title-font: 'Broisther';
     --body-font: 'PlayfairDisplayRegular';
@@ -44,10 +50,7 @@
     --menu-item-height-vh: 5;
     --menu-rows-total: calc(var(--menu-items-total) / var(--menu-items-per-row));
     --menu-padding-vh: 1;
-    --menu-height-total-vh: calc(
-        (var(--menu-rows-total) * var(--menu-item-height-vh)) + 
-        2 * var(--menu-padding-vh)
-    )
+    --menu-height-total-vh: calc((var(--menu-rows-total) * var(--menu-item-height-vh)) + 2 * var(--menu-padding-vh))
 }
 
 body {
@@ -56,7 +59,7 @@ body {
 }
 
 .shaded {
-    background-color: var(--bg-shading);
+    background-color: var(--color-light-tl);
 }
 
 #contents {
@@ -77,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     padding: 0px;
     margin: 0px;
     width: 100vw;
@@ -96,14 +99,14 @@ body {
     max-width: 960px;
     width: 50vw;
     height: calc(1vh * (100 - var(--menu-height-total-vh)));
-    color: var(--colortxt);
+    color: var(--color-txt);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .content>.content_title {
-    font-size: 6vh;
+    font-size: 9vh;
     text-align: center;
     width: fit-content;
     font-family: var(--title-font);
@@ -111,10 +114,10 @@ body {
 }
 
 .content_subtitle {
-    font-size: 1.5em;
+    font-size: 0.5em;
     text-align: center;
     font-style: italic;
-    margin-top: 30px;
+    margin-top: 0.5vh;
     padding-top: 0px;
     font-family: var(--title-font);
     padding: 10px 10px 10px 10px;
@@ -136,9 +139,9 @@ body {
     font-size: 1.0em;
 }
 
-iframe{
+iframe {
     width: 1000px;
-    height: 300px; 
+    height: 300px;
 }
 
 iframe .flip-entries {
@@ -147,5 +150,5 @@ iframe .flip-entries {
 
 .border {
     outline-offset: -10px;
-    outline: 5px double black;
+    outline: 5px double var(--color-dark);
 }
