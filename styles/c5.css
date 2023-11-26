@@ -1,0 +1,95 @@
+#c5 {
+    height: fit-content;
+}
+
+#rsvp_stuff {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 100px;
+
+    display: flex;
+    align-items: stretch;
+    
+    position: relative;
+}
+
+#rsvp_stuff > .column {
+    width: 44%;
+    height: fit-content;
+
+    margin: 0%;
+
+    flex-grow: 1;
+}
+
+#rsvp_stuff > #left_col {
+    margin-right: 3%;
+}
+
+#rsvp_stuff > #right_col {
+    margin-left: 3%;
+}
+
+#rsvp_stuff > #divider {
+    height: 100%;
+    min-width: 1px;
+    margin: 0%;
+
+    border-style: none solid none solid;
+    border-width: 1px;
+    border-color: var(--color-dark);
+
+    align-self: stretch;
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+#rsvp_img{
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 25%;
+
+    object-fit: contain;
+}
+
+#rsvp_text {
+    font-size: calc(4vh + 3vw);
+}
+
+#song_request_text {
+    margin-top: calc(4vh + 7vw);
+
+    font-size: calc(2.5vh + 0.5vw);
+    text-align: center;
+}
+
+#registry_stuff > .content_subtitle {
+    font-size: 6vh;
+    margin-bottom: 25px;
+}
+
+#registry_stuff > #registry_links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.registry_link > a {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.registry_link > a > img {
+    height: 10vh;
+    object-fit: contain;
+}
+
+#c5 a:link {
+    text-decoration: underline;
+}

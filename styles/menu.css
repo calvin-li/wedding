@@ -45,14 +45,6 @@
     display: inline-block;
 }
 
-.menuItem>a:link {
-    text-decoration: none;
-}
-
-.menuItem>a:visited {
-    text-decoration: none;
-}
-
 .menuItem>a:hover {
     text-decoration: underline;
 }

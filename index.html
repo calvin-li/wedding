@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="styles/c2.css">
     <link rel="stylesheet" href="styles/c3.css">
     <link rel="stylesheet" href="styles/c4.css">
+    <link rel="stylesheet" href="styles/c5.css">
+    <link rel="stylesheet" href="styles/c6.css">
 </head>
 
 <body id="contents">
     <div class="content_bg" id="c1bg">
-        <div class="content content_with_bg" id="c1">
+        <div class="content" id="c1">
                 <h1 class="content_title">
                     <span class="capital">E</span>mily and <span class="capital">C</span>alvin 
                 </h1>
@@ -42,7 +44,7 @@
             </a>
         </div>
         <div class="menuItem">
-            <a href="#c4">
+            <a href="#c4_anchor">
                 Gallery
             </a>
         </div>
@@ -52,7 +54,7 @@
             </a>
         </div>
         <div class="menuItem">
-            <a href="#c6">
+            <a href="#c6_anchor">
                 Explore Seattle
             </a>
         </div>
@@ -62,7 +64,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.0516622459918!2d-122.34615673031863!3d47.62568699819951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901538a89d5671%3A0xb7169762b332b607!2sThe%20Ruins!5e1!3m2!1sen!2sus!4v1699658731032!5m2!1sen!2sus" id="RuinsMap" allowfullscreen="" loading="lazy"></iframe>
         <button id="HideMapButton" class="content_body fadeaway border on-cover-bg" onclick="toggleMap()">CLOSE</button>
         </button>
-        <div id="c2" class="content content_with_bg comeback">
+        <div id="c2" class="content comeback">
                 <div id="RuinsTitle" class="content_body border on-cover-bg">
                     <p><a class="name" href="https://landmarkeventco.com/venues/the-ruins/">The Ruins</a></p>
                     <p class="address">570 Roy St Seattle, WA 98109</p>
@@ -74,8 +76,7 @@
     </div>
     <div class="content_bg" id="c3bg">
         <div id="c3_anchor" class="menu_anchor"></div>
-        <div id="gradient"></div>
-        <div class="content content_with_bg" id="c3">
+        <div class="content" id="c3">
             <div class="content_title">
                 <span class="capital">O</span>rder of <span class="capital">E</span>vents<br>
                 <span class="content_subtitle">All times approximate</span>
@@ -110,27 +111,60 @@
             </div>
         </div>
     </div>
-
 <!--
     <div class="content" id="c4">
+        <div id="c4_anchor" class="menu_anchor"></div>
         <h1 class="content_title"><span class="capital">G</span>allery</h1>
         <div id="gallery_wrapper">
             <iframe src="https://drive.google.com/embeddedfolderview?id=111rBCVWqcbPOR_QdsH912W1WgTxh7mKE#grid" id="gallery"></iframe>
         </div>            
     </div>
+-->
     <div class="content" id="c5">
+        <div id="c5_anchor" class="menu_anchor"></div>
         <h1 class="content_title"><span class="capital">R</span>.S.V.P.</h1>
         <div class="content_body">
-            Dui sapien eget mi proin. Id ornare arcu odio ut. Lacus laoreet non curabitur gravida arcu ac tortor
-            dignissim convallis. Morbi non arcu risus quis. Amet luctus venenatis lectus magna fringilla. Lorem
-            donec massa sapien faucibus et molestie. Suspendisse sed nisi lacus sed viverra tellus in. Dui sapien
-            eget mi proin sed libero enim. Ac auctor augue mauris augue neque gravida in fermentum et. Quis vel eros
-            donec ac odio tempor orci. Sagittis id consectetur purus ut faucibus. Semper feugiat nibh sed pulvinar.
-            Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Nascetur ridiculus mus mauris vitae
-            ultricies leo integer malesuada nunc.
+            <div id="rsvp_stuff">
+                <div id="left_col" class="column">
+                    <img id="rsvp_img" src="../media/photobooth.jpg" alt="photobooth style picture with us holding food props">
+                </div>
+                <div id="divider"></div>
+                <div id="right_col" class="column">             
+                    <div id="rsvp_text">
+                        RSVP form <a href="https://forms.gle/svMX7QCNtijUfBAK8">here</a>
+                    </div>
+                    <div id="song_request_text">
+                        Add more song requests using <a href="https://forms.gle/dp3u7eTHfwBzhwP37"> this form</a>
+                    </div>
+                </div>
+            </div>
+            <div id="registry_stuff">
+                <div class="content_subtitle">Gift Registry</div>
+                <div id="registry_links">
+                    <div id="honeyfund" class="registry_link">
+                        <a href="http://honeyfund.com/site/EmilyandCalvin2024">
+                            <img src="../media/honeyfund_h.png">
+                            Honeyfund
+                        </a>
+                    </div>
+                    <div id="honeyfund" class="registry_link">
+                        <a href="http://honeyfund.com/site/EmilyandCalvin2024">
+                            <img src="../media/honeyfund_h.png">
+                            Honeyfund
+                        </a>
+                    </div>
+                    <div id="honeyfund" class="registry_link">
+                        <a href="http://honeyfund.com/site/EmilyandCalvin2024">
+                            <img src="../media/honeyfund_h.png">
+                            Honeyfund
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="content" id="c6">
+        <div id="c6_anchor" class="menu_anchor"></div>
         <h1 class="content_title"><span class="capital">L</span>orem ipsum</h1>
         <div class="content_body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -143,7 +177,6 @@
             Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec.
         </div>
     </div>
--->
 
     <script src="scripts/helloworld.js"></script>
 </body>

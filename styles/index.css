@@ -91,18 +91,15 @@ body {
     background-position: center;
 }
 
-.content_with_bg {
-    position: relative;
-}
-
 .content {
     max-width: 960px;
-    width: 50vw;
+    width: 90vw;
     height: calc(1vh * (100 - var(--menu-height-total-vh)));
     color: var(--color-txt);
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .content>.content_title {
@@ -146,6 +143,16 @@ iframe {
 
 iframe .flip-entries {
     display: flex;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--color-txt);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--color-txt);
 }
 
 .border {
