@@ -74,7 +74,7 @@
 #registry_stuff > #registry_links {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .registry_link > a {
@@ -88,6 +88,10 @@
 .registry_link > a > img {
     height: 10vh;
     object-fit: contain;
+}
+
+#registry_links > #c_and_b svg > path {
+    fill: black;
 }
 
 #c5 a:link {
