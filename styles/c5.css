@@ -46,15 +46,6 @@
     right: 50%;
 }
 
-#rsvp_img{
-    width: 100%;
-    height: fit-content;
-
-    border-radius: 25%;
-
-    object-fit: contain;
-}
-
 #rsvp_text {
     font-size: calc(4vh + 3vw);
 }
@@ -64,6 +55,19 @@
 
     font-size: calc(2.5vh + 0.5vw);
     text-align: center;
+}
+
+#dj_link {
+    font-size: 0.90em;
+}
+
+#rsvp_img{
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 25%;
+
+    object-fit: contain;
 }
 
 #registry_stuff > .content_subtitle {

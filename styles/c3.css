@@ -1,11 +1,5 @@
-#c3bg {
-    --c3--bg-height: 0;
-    background-image: url(../media/rock.jpg);
-}
-
-#c3bg > #gradient {
+#c3 {
     width: 100%;
-    height: 20%;
 }
 
 #c3>.content_title {
@@ -16,31 +10,45 @@
 
 }
 
-#c3 {
-    width: 100%;
+#c3>.content_subtitle {
+    font-size: 2em;
 }
 
 #c3>.content_body {
     height: 100%;
-
-    width: 100%;
+    width: 95vw;
+    max-width: 1152px;
+    margin-bottom: 5%;
     padding: 0px;
+
+    background-image: url(../media/rock.jpg);
+    background-position: 0% 90%;
+    background-size: cover;
+    border-radius: 100px;    
+    
     position: relative;
 }
 
 #schedule {
     background-color: var(--color-light-tl);
-    padding: 30px;
+    margin-left: 10%;
+    height: 100%;
+    min-width: 50%;
+    max-width: 75%;
 
     position: absolute;
-    margin-left: 10%;
-    left:0%;
-    right:10%;
+    right:0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .schedule-item {
+    flex-grow: 1;
+
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
     font-style: italic;
     padding: 30px;
@@ -54,18 +62,22 @@
 }
 
 .schedule-line {
-    width: 65%;
+    flex-grow: 1;
     height: fit-content;
-    margin: 0px 10px 10px 10px;
-    color: var(--color-dark-tl);
+    min-width: 10vw;
+    margin: 0px 10px 1vh 10px;
+    border-color: var(--color-dark-tl);
+    border: none none solid none;
 }
 
 .schedule-event {
+    text-align: left;
     white-space: nowrap;
+    width: 15vh;
 }
 
 #schedule>#attire {
-    margin-top: 50px;
+    margin: 25px 0px 25px 0px;
     font-size: 0.75em;
     font-style: italic;
 }
