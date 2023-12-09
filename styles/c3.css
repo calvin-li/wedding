@@ -24,8 +24,8 @@
     background-image: url("../media/rock.jpg");
     background-position: 0% 90%;
     background-size: cover;
-    border-radius: 100px;    
-    
+    border-radius: 100px;
+
     position: relative;
 }
 
@@ -37,14 +37,14 @@
     max-width: 75%;
 
     position: absolute;
-    right:0%;
+    right: 0%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.schedule-item {
+.schedule_item {
     flex-grow: 1;
 
     display: flex;
@@ -54,14 +54,14 @@
     padding: 30px;
 }
 
-.schedule-time {
+.schedule_time {
     min-width: 5%;
     text-align: right;
     padding-left: 5%;
     margin-right: 15px;
 }
 
-.schedule-line {
+.schedule_line {
     flex-grow: 1;
     height: fit-content;
     min-width: 10vw;
@@ -70,7 +70,7 @@
     border: none none solid none;
 }
 
-.schedule-event {
+.schedule_event {
     text-align: left;
     white-space: nowrap;
     width: 15vh;
