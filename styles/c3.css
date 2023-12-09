@@ -21,7 +21,7 @@
     margin-bottom: 5%;
     padding: 0px;
 
-    background-image: url(../media/rock.jpg);
+    background-image: url("../media/rock.jpg");
     background-position: 0% 90%;
     background-size: cover;
     border-radius: 100px;    
