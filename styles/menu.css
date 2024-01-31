@@ -36,6 +36,7 @@
     text-align: center;
     flex-grow: 1;
     flex-basis: calc((100 / var(--menu-items-per-row)) * 1%);
+    white-space: nowrap;
 }
 
 .menuItem>a {

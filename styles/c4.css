@@ -8,3 +8,8 @@
     align-items: baseline;
     position: relative;
 }
+
+#c4 > #tba {
+    font-family: var(--body-font);
+    font-size: calc(1.5em + 0.35vw);
+}

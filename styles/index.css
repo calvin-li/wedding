@@ -22,6 +22,12 @@
     --menu-items-per-row: 6;
 }
 
+@media (max-width: 1360px) {
+    :root {
+        --menu-items-per-row: 3;
+    }
+}
+
 @media (max-width: 960px) {
     :root {
         --menu-items-per-row: 2;
