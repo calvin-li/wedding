@@ -1,5 +1,6 @@
 map_cover = document.getElementById("c2")
 hide_button = document.getElementById("HideMapButton")
+populate_gallery()
 
 function toggleMap(){
     toggle_fade(map_cover)
@@ -18,5 +19,17 @@ function toggle(element, t_class){
         element.classList.remove(t_class)
     } else {
         element.classList.add(t_class)
+    }
+}
+
+function populate_gallery(){
+    selector = document.getElementById("gallery_selector")
+
+    for(img_name of gallery_contents){
+        const new_img = document.createElement("img")
+        new_img.className = "gallery_thumbnail"
+        new_img.src = "media/gallery/" + img_name
+
+        selector.appendChild(new_img)
     }
 }
